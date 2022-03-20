@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.3.1"
+ruby "2.6.3"
 
 gem "autoprefixer-rails"
 gem "delayed_job_active_record"
@@ -8,7 +8,8 @@ gem "flutie"
 gem "honeybadger"
 gem "jquery-rails"
 gem "normalize-rails", "~> 3.0.0"
-gem "pg"
+gem "pg", '~> 0.18'
+
 gem "puma"
 gem "rack-canonical-host"
 gem "rails", "~> 5.0.0"
@@ -46,7 +47,6 @@ group :development, :staging do
 end
 
 group :test do
-  gem "capybara-webkit"
   gem "database_cleaner"
   gem "formulaic"
   gem "launchy"
